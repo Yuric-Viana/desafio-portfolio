@@ -5,7 +5,62 @@
     }
 
     max-width: 1040px;
-    margin: auto;
+    margin: auto;   
+    padding-block: 120px ;
 
     text-align: center;
+
+    & > div {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        margin-block: 80px 94px;
+
+        span {
+            display: flex;
+            align-items: center;
+            border-radius: 30px;
+            padding: .2em .8em;
+            gap: 8px;
+            background-color: var(--gray-300);
+        }
+    } 
+}
+
+#work {
+    width: max-content;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    gap: 56px;
+
+    & > div {
+        display: grid;
+        grid-template-columns: repeat(3, 330px);
+        column-gap: 95px;
+        row-gap: 24px;
+    }
+
+    figure {
+        background-color: var(--gray-300);
+        padding: 12px;
+        border-radius: 10px;
+        width: 380px;
+        height: 280px;
+
+        figcaption {
+            text-align: start;
+
+            h3 {
+                margin-block: 24px 8px;
+                font: var(--title-md);
+                color: var(--gray-600);
+            }
+        }
+    }
+
+    img {
+        border-radius: 10px;
+        max-width: 100%;
+    }
 }

@@ -1,3 +1,8 @@
 .color-400 {
     color: var(--gray-400);
 }
+
+.subtitle {
+    font: var(--subtitle);
+    color: var(--gray-600);
+}

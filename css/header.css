@@ -1,0 +1,13 @@
+header {
+    h1 {
+        color: var(--gray-600);
+        font: var(--title-lg);
+        margin-block: 8px 20px;
+    }
+
+    h2 {
+        margin-top: 56px;
+        font: var(--subtitle);
+        color: var(--gray-500);
+    }
+}

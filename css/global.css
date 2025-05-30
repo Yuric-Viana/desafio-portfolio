@@ -81,5 +81,8 @@ table {
 }
 
 strong {
+    font: var(--subtitle);
     color: var(--red);
+    font-size: 20px;
+    margin-bottom: 8px;
 }

@@ -33,6 +33,7 @@
     text-align: center;
     display: grid;
     gap: 56px;
+    margin-bottom: 20px;
 
     & > div {
         display: grid;
@@ -43,7 +44,9 @@
 
     figure {
         background-color: var(--gray-300);
-        padding: 12px;
+        padding-inline: 12px;
+        padding-top: 12px;
+        padding-bottom: 21px;
         border-radius: 10px;
         width: 380px;
         height: 280px;

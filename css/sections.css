@@ -1,0 +1,11 @@
+#intro {
+    header > div {
+        width: 680px;
+        margin: auto;
+    }
+
+    max-width: 1040px;
+    margin: auto;
+
+    text-align: center;
+}

@@ -3,10 +3,9 @@
         width: 680px;
         margin: auto;
     }
-
-    max-width: 1040px;
-    margin: auto;   
-    padding-block: 120px ;
+    
+    margin: auto;
+    padding-block: 120px;
 
     text-align: center;
 
@@ -24,7 +23,7 @@
             gap: 8px;
             background-color: var(--gray-300);
         }
-    } 
+    }
 }
 
 #work {
@@ -33,9 +32,9 @@
     text-align: center;
     display: grid;
     gap: 56px;
-    margin-bottom: 20px;
+    margin-bottom: 144px;
 
-    & > div {
+    &>div {
         display: grid;
         grid-template-columns: repeat(3, 330px);
         column-gap: 95px;
@@ -65,5 +64,47 @@
     img {
         border-radius: 10px;
         max-width: 100%;
+    }
+}
+
+#service {
+    background-color: var(--gray-100);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    & > div {
+        margin: auto;
+        text-align: center;
+        margin-top: 88px;
+
+        h2 {
+            font: var(--title-md);
+            color: var(--gray-600);
+        }
+    }
+
+    .service-cards {
+        margin-block: 56px 120px;
+        display: flex;
+        margin-inline: auto;
+        gap: 24px;
+
+        & > .service-cards__item {
+            padding: 20px;
+            border-radius: 10px;
+            text-align: start;
+            border: 1px solid var(--gray-300);
+
+            h3 {
+                margin-block: 20px 8px;
+                color: var(--gray-600);
+                font: var(--title-sm);
+            }
+        }
+
+        & .service-cards__item:hover {
+            border: 1px solid var(--gray-400);
+        }
     }
 }

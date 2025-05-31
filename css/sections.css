@@ -1,15 +1,18 @@
 #intro {
-    header > div {
+    header>div {
         width: 680px;
         margin: auto;
     }
-    
+
+    background-image: url('../assets/Background_Intro.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: auto;
     padding-block: 120px;
 
     text-align: center;
 
-    & > div {
+    &>div {
         display: flex;
         justify-content: center;
         gap: 16px;
@@ -73,7 +76,7 @@
     justify-content: center;
     flex-direction: column;
 
-    & > div {
+    &>div {
         margin: auto;
         text-align: center;
         margin-top: 88px;
@@ -90,7 +93,7 @@
         margin-inline: auto;
         gap: 24px;
 
-        & > .service-cards__item {
+        &>.service-cards__item {
             padding: 20px;
             border-radius: 10px;
             text-align: start;
@@ -106,5 +109,71 @@
         & .service-cards__item:hover {
             border: 1px solid var(--gray-400);
         }
+    }
+}
+
+#contact {
+    background-image: url('../assets/Background_Contacts.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-block: 128px 200px;
+    display: grid;
+    gap: 48px;
+
+    &>div {
+        max-width: max-content;
+        margin: auto;
+        text-align: center;
+    }
+
+    strong {
+        color: var(--purple);
+    }
+
+    h2 {
+        font: var(--title-md);
+        color: var(--gray-600);
+        margin-block: 8px;
+    }
+
+    .contact-cards {
+        display: grid;
+        gap: 16px;
+        cursor: pointer;
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--gray-400);
+        }
+
+        &>div {
+            background-color: var(--gray-300);
+            width: 400px;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        #linkedin:hover {
+            border: 1px solid var(--blue);
+        }
+        
+        #insta:hover {
+            border: 1px solid var(--pink);
+        }
+        
+        #github:hover {
+            border: 1px solid var(--blue);
+        }
+        
+        #email:hover {
+            border: 1px solid var(--red-gmail);
+        }
+
+        
     }
 }

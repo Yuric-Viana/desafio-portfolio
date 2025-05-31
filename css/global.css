@@ -7,10 +7,11 @@
 
 :root {
     --red: #E3646E;
+    --red-gmail: #D14836;
+    --pink: #E1306C;
+    --gray: #6E6E6E;
     --purple: #BB72E9;
     --blue: #3996DB;
-    --green: #82BC4F;
-    --yellow: #EABD5F;
 
     --gray-100: #0D0E11;
     --gray-200: #16181D;
@@ -138,11 +139,9 @@ section {
 html,
 body {
     line-height: 1;
-    background-image: url('../assets/Background_Intro.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
     background-color: var(--gray-200);
     color: var(--gray-400);
+    overflow-x: hidden;
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
